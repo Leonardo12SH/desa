@@ -129,8 +129,7 @@
                                                   <!-- maps -->
                                                   <div class="col-md-6">
                                                             <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-                                                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63317.475467699136!2d109.14974839395673!3d-7.315399648377943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8b2a611e4791%3A0x66322955c41349bb!2sBaseh%2C%20Kedungbanteng%2C%20Banyumas%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1633624237842!5m2!1sen!2sid"
-                                                                                frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                                                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63575.96615310825!2d119.99790192880353!3d-5.184120617021943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe9bdf60993205%3A0x382ed37261f9e04d!2sBonto%20Salama%2C%20Kec.%20Sinjai%20Bar.%2C%20Kabupaten%20Sinjai%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1720926656963!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                                             </div>
                                                   </div>
                                         </div>
