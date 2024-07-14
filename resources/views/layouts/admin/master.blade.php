@@ -67,9 +67,9 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="/" class="brand-link">
-                <img src="{{ asset('assets/theme/img/logo.png') }}" alt="Dashboard"
+                <img src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png" alt="Dashboard"
                     class="brand-image elevation-2 bg-white p-1 rounded" />
-                <span class="brand-text font-weight-light">Pengmas ITTP</span>
+                <span class="brand-text font-weight-light">Panel Admin</span>
             </a>
 
             <!-- Sidebar -->
@@ -86,8 +86,9 @@
         <!-- Main Footer -->
         <footer class="main-footer text-center">
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2014-2021
-                <a href="#">Ojan Alpha</a>.</strong>
+            <strong>Copyright &copy; 2024
+                <a href="#"> PEMERINTAH DESA BONTO SALAMA </a>.
+            </strong>
             All rights reserved.
         </footer>
     </div>

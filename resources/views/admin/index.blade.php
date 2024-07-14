@@ -107,7 +107,7 @@
                     <div class="card-body" style="display: block;">
                         <div class="row">
                             <div class="col-md-3 col-12">
-                                <img src="{{ asset('assets/theme/img/logo.png') }}" alt="Dashboard" class="brand-image"
+                                <img src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png" alt="Dashboard" class="brand-image"
                                     width="80%" />
                             </div>
                             <div class="col-md-9 col-12">
@@ -116,7 +116,7 @@
                                     Segala Jenis Input data harap dipahami dan dilakukan secara prosedur, mengingat demi
                                     kelancaran para pengguna lainnya.
                                 </div>
-                                <p class="text-muted">Dibuat oleh : Institut Teknologi Telkom Purwokerto</p>
+                                <p class="text-muted">Dibuat oleh : KKN UNHAS 112</p>
                             </div>
                         </div>
                     </div>
