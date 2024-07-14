@@ -4,9 +4,9 @@
 <head>
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="author" content="FAUZAN TAQIYUDDIN" />
+          <meta name="author" content="PEMERINTAH DESA BONTO SALAMA" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-          <meta name="description" content="DIgitalisasi Desa Baseh With ITTELKOM PURWOKERTO" />
+          <meta name="description" content="DIgitalisasi Desa Bonto Salama With PEMERINTAH DESA BONTO SALAMA" />
           <title>@yield('title')</title>
           <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
 
@@ -37,7 +37,7 @@
                                               </div>
                                               <div class="col-lg-5 col-xl-5 col-sm-5 col-md-5 col-3 my-auto mt-4">
                                                 <h6>
-                                                  PEMERINTAH DESA BONTO SALAMA... Izzatul
+                                                  PEMERINTAH DESA BONTO SALAMA
                                                   <p>Sinjai Barat</p>
                                                  </h6>
                                               </div>
@@ -142,8 +142,8 @@
                                         <div class="container">
                                                   <div class="row">
                                                             <div class="col-12">
-                                                                      <div class="footer-copyright"><span>2021 &copy; <a href="/">Desa Baseh</a> Pengabdian
-                                                                                          Masyarakat x ITTelkom Purwokerto</span></div>
+                                                                      <div class="footer-copyright"><span>2021 &copy; <a href="/">Desa Bonto Salama</a> Pengabdian
+                                                                                          Masyarakat x PEMERINTAH BONTO SALAMA</span></div>
                                                             </div>
                                                   </div>
                                         </div>
