@@ -26,9 +26,24 @@
           <div class="wrapper clearfix" id="wrapperParallax">
                     <header class="header header-transparent header-sticky">
                               <nav class="navbar navbar-sticky navbar-expand-lg" id="primary-menu">
-                                        <div class="container"> <a class="logo navbar-brand" href="/"><img class="logo logo-dark" src="{{ asset('cdn/img/baseh-logo.png') }}"
-                                                                      width="250" alt="Logo" /><img class="logo logo-light" src="{{ asset('cdn/img/baseh-logo.png') }}" width="250"
-                                                                      alt="Logo" /></a>
+                                        <div class="container"> 
+                                          <a class="logo navbar-brand" href="/">
+                                            <div class="row">
+                                              <div class="col-lg-2 col-xl-2 col-sm-2 col-md-2 col-5 me-3">
+                                                <img class="logo logo-dark" src="{{ asset('cdn/img/image_3.png') }}"
+                                                width="120" alt="Logo" />
+                                            <img class="logo logo-light" src="{{ asset('cdn/img/image_3.png') }}" width="120" alt="Logo" />
+                                              </div>
+                                              <div class="col-lg-5 col-xl-5 col-sm-5 col-md-5 col-3 my-auto mt-4">
+                                                <h6>
+                                                  PEMERINTAH DESA BONTO SALAMA
+                                                  <p>Sinjai Barat</p>
+                                                 </h6>
+                                              </div>
+                                            </div>
+                                         
+                                          
+                                          </a>
                                                   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent"
                                                             aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
                                                   <div class="collapse navbar-collapse" id="navbarContent">
