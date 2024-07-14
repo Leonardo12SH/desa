@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    Selamat datang di desa baseh
+    Selamat datang di desa bonto salama
 @endsection
 
 @section('content')
@@ -11,8 +11,8 @@
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
                         <div class="hero-content">
-                            <h1 class="hero-title">Selamat Datang ...</h1>
-                            <p class="hero-desc">Website Layanan Terpadu Desa Baseh, Informasi Potensi Desa dan
+                            <h1 class="hero-title">Selamat Datang Di Desa Bonto Salama ...</h1>
+                            <p class="hero-desc">Website Layanan Terpadu Desa Bonto Salama, Informasi Potensi Desa dan
                                 Digitalisasi Desa</p>
                             <div class="hero-action"><a class="btn btn--primary scroll-to" href="#features">Cek
                                     Potensi</a></div>
@@ -43,7 +43,7 @@
             <div class="row clearfix">
                 <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                     <div class="heading heading-3 text-center">
-                        <p class="heading-subtitle">Layanan Desa Baseh</p>
+                        <p class="heading-subtitle">Layanan Desa Bonto Salama</p>
                         <h2 class="heading-title">Informasi dan Layanan Publik</h2>
                         <div class="divider">
                             <div class="line"></div>
@@ -151,7 +151,7 @@
                     <div class="heading heading-1">
                         <p class="heading-subtitle">Potensi Wisata</p>
                         <h2 class="heading-title">Wisata Menarik</h2>
-                        <p class="heading-desc">Beberapa objek wisata yang kamu kunjungi di desa baseh ini
+                        <p class="heading-desc">Beberapa objek wisata yang kamu kunjungi di desa bonto salama ini
                         </p>
                     </div>
                     <div class="about-action"><a class="btn btn--primary" href="{{ route('home.wisata') }}">Lihat Daftar
