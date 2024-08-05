@@ -26,8 +26,11 @@ class UserController extends Controller
             return DataTables::of($data)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
-                    $actionBtn_1 = '<a href="' . route('user.edit', $row->id) . '" class="edit btn btn-secondary btn-sm"><i class="fas fa-eye"></i> Lihat</a>';
-                    $actionBtn = $actionBtn_1 . ' <a href="javascript:void(0)" data-toggle="tooltip"  data-id="' . $row->id . '" data-url="' . route('user.destroy', $row->id) . '" data-original-title="Delete" class="btn btn-danger btn-sm deleteItem"><i class="fas fa-trash"></i> Hapus</a>';
+                    // $actionBtn_1 = '<a href="' . route('user.edit', $row->id) . '" class="edit btn btn-secondary btn-sm"><i class="fas fa-eye"></i> Lihat</a>';
+
+                    // $actionBtn = $actionBtn_1 . ' <a href="javascript:void(0)" data-toggle="tooltip"  data-id="' . $row->id . '" data-url="' . route('user.destroy', $row->id) . '" data-original-title="Delete" class="btn btn-danger btn-sm deleteItem"><i class="fas fa-trash"></i> Hapus</a>';
+
+                    $actionBtn = ' <a href="javascript:void(0)" data-toggle="tooltip"  data-id="' . $row->id . '" data-url="' . route('user.destroy', $row->id) . '" data-original-title="Delete" class="btn btn-danger btn-sm deleteItem"><i class="fas fa-trash"></i> Hapus</a>';
                     return $actionBtn;
                 })
                 ->rawColumns(['action'])
@@ -111,6 +114,5 @@ class UserController extends Controller
             $data->delete();
             return response()->json(['success' => 'Users Berhasil dihapus']);
         }
-        
     }
 }

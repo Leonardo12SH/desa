@@ -29,12 +29,14 @@
             <div class="col-md-12 col-lg-4">
                 <div class="card login-box-container">
                     <div class="card-body">
-                        <div class="authent-logo">
-                            <img src="{{ asset('cdn/img/baseh-logo.png') }}" alt="Login Desa Baseh" class="img-fluid">
-                        </div>
-                        <div class="authent-text">
-                            <p>Welcome</p>
-                            <p>Please Sign-in to your account.</p>
+                        <div class="">
+                            <div class="authent-logo">
+                                <img src="{{ asset('cdn/img/image_3.png') }}" alt="Login Desa Baseh" height="120px">
+                            </div>
+                            <div class="authent-text">
+                                <p>Welcome</p>
+                                <p>Please Sign-in to your account.</p>
+                            </div>
                         </div>
 
                         <form action="{{route('login')}}" method="POST">

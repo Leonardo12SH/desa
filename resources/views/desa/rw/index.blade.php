@@ -40,6 +40,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nomor RW</th>
+                                            <th>Nama RW</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -50,6 +51,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nomor RW</th>
+                                            <th>Nama RW</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
@@ -81,6 +83,11 @@
                         <div class="mb-2">
                             <label for="nomor_rw" class="form-label">Nomor RW</label>
                             <input type="number" name="nomor_rw" class="form-control" id="nomor_rt" placeholder="1-999"
+                                autocomplete="off" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="nomor_rw" class="form-label">Nama RW</label>
+                            <input type="text" name="nama_rw" class="form-control" id="nama_rt" placeholder="1-999"
                                 autocomplete="off" required>
                         </div>
                         <hr>
@@ -130,6 +137,10 @@
                     {
                         data: 'nomor_rw',
                         name: 'nomor_rw'
+                    },
+                    {
+                        data: 'nama_rw',
+                        name: 'nama_rw'
                     },
                     {
                         data: 'action',

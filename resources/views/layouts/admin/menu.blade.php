@@ -75,6 +75,15 @@
                     </p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('struktur.index') }}"
+                    class="nav-link {{ (request()->segment(2) == 'struktur') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-mail-bulk"></i>
+                    <p>
+                        Struktur Organisasi
+                    </p>
+                </a>
+            </li>
         @elseif(auth()->user()->role == "dawis")
             <li class="nav-item">
                 <a href="{{ route('admin') }}" class="nav-link {{ Route::is('admin') ? 'active' : '' }}">

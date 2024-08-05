@@ -32,6 +32,8 @@ class SuratController extends Controller
         }
         return view('kontak.index');
     }
+
+
     /**
      * Remove the specified resource from storage.
      *

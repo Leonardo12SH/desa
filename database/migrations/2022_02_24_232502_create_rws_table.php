@@ -16,6 +16,7 @@ class CreateRwsTable extends Migration
         Schema::create('rws', function (Blueprint $table) {
             $table->id();
             $table->integer('nomor_rw');
+            $table->string('nama_rw');
             $table->timestamps();
         });
     }

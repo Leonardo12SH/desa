@@ -45,10 +45,10 @@
                             <span class="sr-only">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" href="{{route('profile')}}"><i class="fas fa-user mr-2"></i>Profile</a>
-                            <a class="dropdown-item" href="{{route('profile.password')}}"><i class="fas fa-key mr-2"></i>Change Password</a>
-                            <div class="dropdown-item"><input type="checkbox" name="mode" class="mr-1"><span>Dark
-                                    Mode</span></div>
+                            {{-- <a class="dropdown-item" href="{{route('profile')}}"><i class="fas fa-user mr-2"></i>Profile</a>
+                            <a class="dropdown-item" href="{{route('profile.password')}}"><i class="fas fa-key mr-2"></i>Change Password</a> --}}
+                            {{-- <div class="dropdown-item"><input type="checkbox" name="mode" class="mr-1"><span>Dark
+                                    Mode</span></div> --}}
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();"><i class="fas fa-unlock mr-2"></i>Log

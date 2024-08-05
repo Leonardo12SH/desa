@@ -42,6 +42,7 @@ class RtController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'nomor_rt' => 'required|unique:rts',
+            'nama_rt' => 'required',
         ]);
 
         if ($validator->fails()) {

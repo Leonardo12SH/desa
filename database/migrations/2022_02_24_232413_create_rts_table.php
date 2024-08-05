@@ -16,6 +16,7 @@ class CreateRtsTable extends Migration
         Schema::create('rts', function (Blueprint $table) {
             $table->id();
             $table->integer('nomor_rt');
+            $table->string('nama_rt');
             $table->timestamps();
         });
     }
