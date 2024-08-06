@@ -30,7 +30,22 @@
                 <div class="card login-box-container">
                     <div class="card-body">
                         <div class="authent-logo">
-                            <img src="{{ asset('cdn/img/baseh-logo.png') }}" alt="Login Desa Baseh" class="img-fluid">
+                        <style>
+        .img-fluid {
+            width: 30%; /* atau ukuran persentase atau satuan tetap lainnya */
+            height: auto; /* agar rasio aspek tetap terjaga */
+            margin-top: -15px; /* atur jarak dari atas */
+            margin-bottom: -15px; /* Atur jarak dari bawah */
+            margin-left: 10px; /* atur jarak dari kiri */
+            /* atau gunakan properti position seperti berikut */
+            /* position: relative;
+            top: 10px;
+            left: 20px; */
+        }
+    </style>
+</head>
+<body>
+                            <img src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png" alt="Login Desa Bonto Salama" class="img-fluid">
                         </div>
                         <div class="authent-text">
                             <p>Welcome</p>
