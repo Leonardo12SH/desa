@@ -10,5 +10,6 @@ class Rw extends Model
     use HasFactory;
     protected $fillable = [
         'nomor_rw',
+        'nama_rw',
     ];
 }

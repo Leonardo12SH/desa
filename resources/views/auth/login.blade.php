@@ -29,6 +29,7 @@
             <div class="col-md-12 col-lg-4">
                 <div class="card login-box-container">
                     <div class="card-body">
+<<<<<<< HEAD
                         <div class="authent-logo">
                         <style>
         .img-fluid {
@@ -50,6 +51,16 @@
                         <div class="authent-text">
                             <p>Welcome</p>
                             <p>Please Sign-in to your account.</p>
+=======
+                        <div class="">
+                            <div class="authent-logo">
+                                <img src="{{ asset('cdn/img/image_3.png') }}" alt="Login Desa Baseh" height="120px">
+                            </div>
+                            <div class="authent-text">
+                                <p>Welcome</p>
+                                <p>Please Sign-in to your account.</p>
+                            </div>
+>>>>>>> d3e3f4b1120cb2c44e79124f0d8fe8cb3b07f43d
                         </div>
 
                         <form action="{{route('login')}}" method="POST">

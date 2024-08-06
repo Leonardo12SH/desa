@@ -6,7 +6,7 @@
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="author" content="PEMERINTAH DESA BONTO SALAMA" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-          <meta name="description" content="DIgitalisasi Desa Bonto Salama With PEMERINTAH DESA BONTO SALAMA" />
+          <meta name="description" content="Digitalisasi Desa Bonto Salama With PEMERINTAH DESA BONTO SALAMA" />
           <title>@yield('title')</title>
           <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
 

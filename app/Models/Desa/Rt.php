@@ -11,5 +11,6 @@ class Rt extends Model
 
     protected $fillable = [
         'nomor_rt',
+        'nama_rt',
     ];
 }

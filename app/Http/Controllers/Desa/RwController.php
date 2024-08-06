@@ -37,6 +37,7 @@ class RwController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'nomor_rw' => 'required|unique:rws',
+            'nama_rw' => 'required',
         ]);
 
         if ($validator->fails()) {

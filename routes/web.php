@@ -44,6 +44,7 @@ Route::group(['middleware' => ['auth', 'role:admin', 'dontback']], function () {
         Route::resource('wisata', '\App\Http\Controllers\Desa\WisataController');
         Route::resource('info', '\App\Http\Controllers\Desa\InfoController');
         Route::resource('kontak', '\App\Http\Controllers\Data\SuratController');
+        Route::resource('struktur', '\App\Http\Controllers\Data\StrukturController');
 
         // user management
         Route::resource('user', '\App\Http\Controllers\Data\UserController');
