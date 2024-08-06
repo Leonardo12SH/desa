@@ -46,12 +46,6 @@
     </style>
 </head>
 <body>
-                            <img src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png" alt="Login Desa Bonto Salama" class="img-fluid">
-                        </div>
-                        <div class="authent-text">
-                            <p>Welcome</p>
-                            <p>Please Sign-in to your account.</p>
-=======
                         <div class="">
                             <div class="authent-logo">
                                 <img src="{{ asset('cdn/img/image_3.png') }}" alt="Login Desa Baseh" height="120px">
@@ -60,7 +54,6 @@
                                 <p>Welcome</p>
                                 <p>Please Sign-in to your account.</p>
                             </div>
->>>>>>> d3e3f4b1120cb2c44e79124f0d8fe8cb3b07f43d
                         </div>
 
                         <form action="{{route('login')}}" method="POST">
