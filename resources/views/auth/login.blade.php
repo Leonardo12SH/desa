@@ -29,7 +29,7 @@
             <div class="col-md-12 col-lg-4">
                 <div class="card login-box-container">
                     <div class="card-body">
-<<<<<<< HEAD
+
                         <div class="authent-logo">
                         <style>
         .img-fluid {
