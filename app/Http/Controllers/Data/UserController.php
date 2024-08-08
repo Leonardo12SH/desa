@@ -52,8 +52,8 @@ class UserController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'email' => 'required|unique:users',
-            'no_rt' => 'required|unique:users',
-            'no_rw' => 'required',
+            // 'no_rt' => 'required|unique:users',
+            // 'no_rw' => 'required',
             'role' => 'required',
             'name' => 'required',
             'password' => 'required'
@@ -66,8 +66,8 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'role' => $request->role,
-            'no_rt' => $request->no_rt,
-            'no_rw' => $request->no_rw,
+            // 'no_rt' => $request->no_rt,
+            // 'no_rw' => $request->no_rw,
             'password' => Hash::make($request->password),
             'status' => 1
         ]);

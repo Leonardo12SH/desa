@@ -52,6 +52,7 @@
                                                   <div class="collapse navbar-collapse" id="navbarContent">
                                                             <ul class="navbar-nav ms-auto">
                                                                       <li class="nav-item active"><a class="nav-link" href="#hero">Home</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="#statistik">Statistik</a></li>
                                                                       <li class="nav-item"><a class="nav-link" href="#features">Struktur</a></li>
                                                                       <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
                                                                       <li class="nav-item"><a class="nav-link" href="#about">Wisata</a></li>

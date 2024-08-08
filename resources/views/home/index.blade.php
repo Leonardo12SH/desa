@@ -38,7 +38,7 @@
         </div>
     </section>
 
-    <section class="processes" id="berita">
+    <section class="processes" id="statistik">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
@@ -186,7 +186,7 @@
         </div>
     </section>
 
-    <section class="processes" id="">
+    <section class="processes" id="berita">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
@@ -214,7 +214,7 @@
                     </div>
                 @empty
                     <div class="col-md-3 col-12">
-                        <img src="{{ asset('cdn/img/error.svg') }}" alt="Artikel Kosong">
+                        <img src="{{ asset('cdn/img/belajar.svg') }}" alt="Artikel Kosong">
                     </div>
                 @endforelse
             </div>

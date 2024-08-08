@@ -20,6 +20,7 @@
                         </ol>
                     </div>
                 </div>
+               
             </div><!-- /.container-fluid -->
         </section>
 
@@ -32,10 +33,10 @@
                             <span class="info-box-icon bg-info elevation-1"><i class="fas fa-home"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Total Dawis</span>
+                                <span class="info-box-text">Total Dusun</span>
                                 <span class="info-box-number">
-                                    {{ $dawis }}
-                                    <small>Dawis</small>
+                                    {{ $statistik->jumlahdusun }}
+                                    <small>Dasun</small>
                                 </span>
                             </div>
                             <!-- /.info-box-content -->
@@ -48,10 +49,10 @@
                             <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-users"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Total KK</span>
+                                <span class="info-box-text">Total Penduduk</span>
                                 <span class="info-box-number">
-                                    {{ $keluarga }}
-                                    <small>Kepala Keluarga</small>
+                                    {{ $statistik->jumlahpenduduk }}
+                                    <small>Penduduk</small>
                                 </span>
                             </div>
                             <!-- /.info-box-content -->
@@ -84,8 +85,8 @@
                             <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">New Members</span>
-                                <span class="info-box-number">2,000</span>
+                                <span class="info-box-text">Total RT&RW</span>
+                                <span class="info-box-number">{{ $statistik->jumlahrt + $statistik->jumlahrw }}</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>

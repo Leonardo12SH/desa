@@ -42,8 +42,8 @@
                                             <th>Nama Lengkap</th>
                                             <th>E-Mail</th>
                                             <th>Role</th>
-                                            <th>RT</th>
-                                            <th>RW</th>
+                                            {{-- <th>RT</th>
+                                            <th>RW</th> --}}
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -56,8 +56,8 @@
                                             <th>Nama Lengkap</th>
                                             <th>E-Mail</th>
                                             <th>Role</th>
-                                            <th>RT</th>
-                                            <th>RW</th>
+                                            {{-- <th>RT</th>
+                                            <th>RW</th> --}}
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6">
+                            {{-- <div class="col-md-3 col-6">
                                 <div class="mb-2">
                                     <div class="form-group">
                                         <label for="exampleFormControlSelect1">Pilih RW</label>
@@ -136,8 +136,8 @@
                                         @endforeach
                                     </select>
                                 </div>
-                            </div>
-                            <div class="col-md-12 col-12">
+                            </div> --}}
+                            <div class="col-md-6 col-12">
                                 <div class="mb-2">
                                     <label for="password" class="form-label">Password</label>
                                     <input type="password" name="password" class="form-control" id="password"
@@ -202,14 +202,14 @@
                         data: 'role',
                         name: 'role'
                     },
-                    {
-                        data: 'no_rt',
-                        name: 'no_rt'
-                    },
-                    {
-                        data: 'no_rw',
-                        name: 'no_rw'
-                    },
+                    // {
+                    //     data: 'no_rt',
+                    //     name: 'no_rt'
+                    // },
+                    // {
+                    //     data: 'no_rw',
+                    //     name: 'no_rw'
+                    // },
                     {
                         data: 'action',
                         name: 'action',
