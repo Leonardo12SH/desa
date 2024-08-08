@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-          <section class="hero hero-lead hero-lead-1 bg-gray" id="hero">
+          {{-- <section class="hero hero-lead hero-lead-1 bg-gray" id="hero">
                     <div class="hero-cotainer">
                               <div class="container">
                                         <div class="row">
@@ -22,7 +22,7 @@
                                                   </svg>
                                         </div>
                               </div>
-          </section>
+          </section> --}}
           <section class="processes" id="features">
                     <div class="container">
                               <div class="row clearfix">
@@ -54,7 +54,7 @@
                                           </div>
                                 @empty
                                           <div class="col-md-3 col-12">
-                                                    <img src="{{ asset('cdn/img/error.svg') }}" alt="Artikel Kosong">
+                                                    <img src="{{ asset('cdn/img/belajar.svg') }}" alt="Artikel Kosong">
                                           </div>
                                 @endforelse
                       </div>

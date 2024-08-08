@@ -51,12 +51,12 @@
                                                             aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
                                                   <div class="collapse navbar-collapse" id="navbarContent">
                                                             <ul class="navbar-nav ms-auto">
-                                                                      <li class="nav-item active"><a class="nav-link" href="#hero">Home</a></li>
-                                                                      <li class="nav-item"><a class="nav-link" href="#statistik">Statistik</a></li>
-                                                                      <li class="nav-item"><a class="nav-link" href="#features">Struktur</a></li>
-                                                                      <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
-                                                                      <li class="nav-item"><a class="nav-link" href="#about">Wisata</a></li>
-                                                                      <li class="nav-item"><a class="nav-link" href="#register">Hubungi</a></li>
+                                                                      <li class="nav-item active"><a class="nav-link" href="{{ url('/') }}#hero">Home</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#statistik">Statistik</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#features">Struktur</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#berita">Berita</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#about">Wisata</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#register">Hubungi</a></li>
                                                             </ul>
                                                             @guest
                                                                       <div class="module-container">
@@ -97,7 +97,7 @@
                               <div class="container">
                                         <div class="row">
                                                   <!-- contact us -->
-                                                  <div class="col-md-6">
+                                                  <div class="col-md-12">
                                                             <div class="heading text-center">
                                                                       <h5 class="heading-title">Hubungi Desa ?</h5>
                                                                       <p class="heading-subtitle">Isi Form ini untuk layangan pengaduan dan informasi desa</p>
@@ -107,19 +107,19 @@
                                                                                 <strong>{{ $message }}</strong>
                                                                       </div>
                                                             @endif
-                                                            <form class="contactForm" action="{{ route('contact') }}" method="POST">
+                                                            <form class="contactForm shadow p-4 rounded-3" action="{{ route('contact') }}" method="POST">
                                                                       @csrf
                                                                       <div class="row">
                                                                                 <div class="col-12 col-md-6">
-                                                                                          <input class="form-control" type="text" id="wa_name" name="name"
+                                                                                          <input class="form-control border-primary" type="text" id="wa_name" name="name"
                                                                                                     placeholder="Nama Lengkap" required="" />
                                                                                 </div>
                                                                                 <div class="col-12 col-md-6">
-                                                                                          <input class="form-control" type="email" id="wa_email" name="email" placeholder="Email"
+                                                                                          <input class="form-control border-primary" type="email" id="wa_email" name="email" placeholder="Email"
                                                                                                     required="" />
                                                                                 </div>
                                                                                 <div class="col-12 mb-4">
-                                                                                          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Isi pesan disini" name="body" rows="3"></textarea>
+                                                                                          <textarea class="form-control border-primary" id="exampleFormControlTextarea1" placeholder="Isi pesan disini" name="body" rows="3"></textarea>
                                                                                           <small class="text-danger">Note : Segala pertanyaan anda akan kami balas memalui EMail
                                                                                                     yang anda
                                                                                                     kirimkan.</small>
@@ -131,11 +131,7 @@
                                                             </form>
                                                   </div>
                                                   <!-- maps -->
-                                                  <div class="col-md-6">
-                                                            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-                                                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63575.96615310825!2d119.99790192880353!3d-5.184120617021943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe9bdf60993205%3A0x382ed37261f9e04d!2sBonto%20Salama%2C%20Kec.%20Sinjai%20Bar.%2C%20Kabupaten%20Sinjai%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1720926656963!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                                            </div>
-                                                  </div>
+                                                 
                                         </div>
                               </div>
                     </section>
@@ -145,7 +141,7 @@
                                         <div class="container">
                                                   <div class="row">
                                                             <div class="col-12">
-                                                                      <div class="footer-copyright"><span>2021 &copy; <a href="/">Desa Bonto Salama</a> Pengabdian
+                                                                      <div class="footer-copyright"><span>&copy; <script>document.write(new Date().getFullYear());</script> <a href="/">Desa Bonto Salama</a> Pengabdian
                                                                                           Masyarakat x PEMERINTAH BONTO SALAMA</span></div>
                                                             </div>
                                                   </div>

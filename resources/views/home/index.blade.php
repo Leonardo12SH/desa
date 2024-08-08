@@ -20,7 +20,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
                         <div class="hero-img">
-                            <div class="ignielYTlazy rounded-20" data-embed="P5OWsFDfUQQ">
+                            <div class="ignielYTlazy rounded-20" data-embed="NDTi3hXUm_Q">
                                 <span class="button"></span>
                             </div>
                         </div>
@@ -57,11 +57,11 @@
                                 <div class="numbers">
                                   <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah Penduduk</p>
                                   <h5 class="font-weight-bolder">
-                                    {{ $statistik->jumlahpenduduk }}
+                                    {{ $statistik->jumlahpenduduk ?? 0 }}
                                   </h5>
                                 </div>
                             </div>
-                            <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                            <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun ?? null }}</span>
                               
                             </div>
                           </div>
@@ -75,11 +75,11 @@
                             <div class="numbers">
                               <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah Dusun</p>
                               <h5 class="font-weight-bolder">
-                                {{ $statistik->jumlahdusun }}
+                                {{ $statistik->jumlahdusun ?? 0 }}
                               </h5>
                             </div>
                         </div>
-                        <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                        <span class="">Jumlah Dusun di Desa Bonto Salama Tahun {{ $statistik->tahun ?? null }}</span>
                          
                         </div>
                       </div>
@@ -93,11 +93,11 @@
                         <div class="numbers">
                           <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah RT</p>
                           <h5 class="font-weight-bolder">
-                            {{ $statistik->jumlahrt }}
+                            {{ $statistik->jumlahrt ?? 0 }}
                           </h5>
                         </div>
                     </div>
-                    <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                    <span class="">Jumlah Rukun Tetangga (RT) di Desa Bonto Salama Tahun {{ $statistik->tahun ?? null }}</span>
                     
                     </div>
                   </div>
@@ -111,16 +111,16 @@
                     <div class="numbers">
                       <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah RW</p>
                       <h5 class="font-weight-bolder">
-                        {{ $statistik->jumlahrw }}
+                        {{ $statistik->jumlahrw ?? 0 }}
                       </h5>
                     </div>
                 </div>
-                <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                <span class="">Jumlah Rukun Warga (RW) di Desa Bonto Salama Tahun {{ $statistik->tahun ?? null }}</span>
                  
                 </div>
               </div>
             </div>
-    </div>
+        </div>
             </div>
         </div>
     </section>
@@ -178,10 +178,10 @@
                     </div>
                 </div>
             </div> --}}
-            <div class="row">
+           
                 <div class="row justify-content-center">
-                    <img src="https://th.bing.com/th/id/R.32d2d26ae912f1a8ca4129111a752411?rik=ck9AYbtC2pzijw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-BgAfxrRA4Ng%2fUmD0Ppj9YYI%2fAAAAAAAABD8%2fjDnT62ak7hg%2fs1600%2fstruktur%2bdesa.jpg&ehk=vfvj%2bEBzslMUF%2fS%2fCxuXCdT9tYUEIaJ6l2Kk%2f1QnHSw%3d&risl=&pid=ImgRaw&r=0" alt="" height="700px">
-           </div>
+                    <img src="https://th.bing.com/th/id/R.32d2d26ae912f1a8ca4129111a752411?rik=ck9AYbtC2pzijw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-BgAfxrRA4Ng%2fUmD0Ppj9YYI%2fAAAAAAAABD8%2fjDnT62ak7hg%2fs1600%2fstruktur%2bdesa.jpg&ehk=vfvj%2bEBzslMUF%2fS%2fCxuXCdT9tYUEIaJ6l2Kk%2f1QnHSw%3d&risl=&pid=ImgRaw&r=0" alt="" height="75%" weight="auto">
+       
             </div>
         </div>
     </section>
@@ -224,20 +224,6 @@
     <section class="about bg-gray" id="about">
         <div class="container">
             <div class="row align-items-center text-center-xs">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="img-fluid mb-5 rounded-50" src="{{ asset('cdn/img/image_1.jpg') }}"
-                                    alt="App screenshot" />
-                            </div>
-                            <div class="carousel-item">
-                                <img class="img-fluid mb-5 rounded-50" src="{{ asset('cdn/img/image_2.jpg') }}"
-                                    alt="App screenshot" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
                     <div class="heading heading-1">
                         <p class="heading-subtitle">Potensi Wisata</p>
@@ -249,6 +235,26 @@
                             Wisata</a>
                     </div>
                 </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    {{-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-fluid mb-5 rounded-50" src="{{ asset('cdn/img/image_1.jpg') }}"
+                                    alt="App screenshot" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid mb-5 rounded-50" src="{{ asset('cdn/img/image_2.jpg') }}"
+                                    alt="App screenshot" />
+                            </div>
+                        </div>
+                    </div> --}}
+                  
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63575.96615310825!2d119.99790192880353!3d-5.184120617021943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe9bdf60993205%3A0x382ed37261f9e04d!2sBonto%20Salama%2C%20Kec.%20Sinjai%20Bar.%2C%20Kabupaten%20Sinjai%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1720926656963!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                        </div>
+                </div>
+                
             </div>
         </div>
     </section>

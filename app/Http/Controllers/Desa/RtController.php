@@ -23,13 +23,40 @@ class RtController extends Controller
             return DataTables::of($data)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
-                    $actionBtn = ' <a href="javascript:void(0)" data-toggle="tooltip"  data-id="' . $row->id . '" data-url="' . route('rt.destroy', $row->id) . '" data-original-title="Delete" class="btn btn-danger btn-sm deleteItem"><i class="fas fa-trash"></i> Hapus</a>';
-                    return $actionBtn;
+                    $editBtn = '<a href="javascript:void(0)" data-toggle="tooltip" data-id="' . $row->id . '" data-url="' . route('rt.edit', $row->id) . '" data-original-title="Edit" class="btn btn-warning btn-sm editItem"><i class="fas fa-edit"></i> Edit</a>';
+                    $deleteBtn = '<a href="javascript:void(0)" data-toggle="tooltip" data-id="' . $row->id . '" data-url="' . route('rt.destroy', $row->id) . '" data-original-title="Delete" class="btn btn-danger btn-sm deleteItem"><i class="fas fa-trash"></i> Hapus</a>';
+                    return $editBtn . ' ' . $deleteBtn;
                 })
                 ->rawColumns(['action'])
                 ->make(true);
         }
         return view('desa.rt.index');
+    }
+
+    public function edit($id)
+    {
+        $rt = Rt::findOrFail($id);
+        return response()->json($rt);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $validator = Validator::make($request->all(), [
+            'tahun' => 'required|unique:rts,tahun,' . $id,
+            'jumlahdusun' => 'required|integer',
+            'jumlahpenduduk' => 'required|integer',
+            'jumlahrt' => 'required|integer',
+            'jumlahrw' => 'required|integer',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['error' => $validator->errors()->all()]);
+        }
+
+        $rt = Rt::findOrFail($id);
+        $rt->update($request->all());
+
+        return response()->json(['success' => 'Statistik Berhasil diperbarui']);
     }
 
     /**

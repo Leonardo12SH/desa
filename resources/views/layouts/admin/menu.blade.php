@@ -22,7 +22,7 @@
 
             <li class="nav-item">
                 <a href="{{ route('rt.index') }}" class="nav-link {{ (request()->segment(2) == 'rt') ? 'active' : '' }}">
-                    <i class="nav-icon fas fa-user"></i>
+                    <i class="nav-icon fas fa-chart-bar"></i>
                     <p>
                         Statistik Desa
                     </p>
@@ -78,7 +78,7 @@
             <li class="nav-item">
                 <a href="{{ route('struktur.index') }}"
                     class="nav-link {{ (request()->segment(2) == 'struktur') ? 'active' : '' }}">
-                    <i class="nav-icon fas fa-mail-bulk"></i>
+                    <i class="nav-icon fas fa-sitemap"></i>
                     <p>
                         Struktur Organisasi
                     </p>

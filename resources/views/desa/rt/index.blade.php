@@ -119,6 +119,53 @@
             </div>
         </div>
     </div>
+     <div class="modal fade" id="editModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModelHeading"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm" name="editForm" class="form-horizontal">
+                        @csrf
+                        @method('PUT')
+                        <input type="hidden" name="id" id="editItem_id">
+                        <div class="mb-2">
+                            <label for="edit_tahun" class="form-label">Tahun</label>
+                            <input type="text" name="tahun" class="form-control" id="edit_tahun" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="edit_jumlahdusun" class="form-label">Jumlah Dusun</label>
+                            <input type="number" name="jumlahdusun" class="form-control" id="edit_jumlahdusun" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="edit_jumlahpenduduk" class="form-label">Jumlah Penduduk</label>
+                            <input type="number" name="jumlahpenduduk" class="form-control" id="edit_jumlahpenduduk" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="edit_jumlahrt" class="form-label">Jumlah RT</label>
+                            <input type="number" name="jumlahrt" class="form-control" id="edit_jumlahrt" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="edit_jumlahrw" class="form-label">Jumlah RW</label>
+                            <input type="number" name="jumlahrw" class="form-control" id="edit_jumlahrw" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary float-right mt-3">
+                            <i class="fas fa-save mr-2"></i>Update
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 @section('css-tambahan')
     <link rel="stylesheet" href="{{ asset('assets/theme/datatables/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
@@ -205,6 +252,60 @@
                     }
                 });
             });
+
+
+            $('body').on('click', '.editItem', function() {
+            console.log("Edit button clicked");
+            var id = $(this).data("id");
+            var url = $(this).data("url");
+            console.log("ID:", id);
+            console.log("URL:", url);
+            $.get(url, function(data) {
+                $('#editModelHeading').html("Edit Data Statistik");
+                $('#editItem_id').val(data.id);
+                $('#edit_tahun').val(data.tahun);
+                $('#edit_jumlahdusun').val(data.jumlahdusun);
+                $('#edit_jumlahpenduduk').val(data.jumlahpenduduk);
+                $('#edit_jumlahrt').val(data.jumlahrt);
+                $('#edit_jumlahrw').val(data.jumlahrw);
+                $('#editModal').modal('show');
+            });
+            });
+
+    $('#editForm').on('submit', function(e) {
+        e.preventDefault();
+        var id = $('#editItem_id').val();
+        $.ajax({
+            url: "{{ route('rt.update', '') }}/" + id,
+            type: "PUT",
+            data: $(this).serialize(),
+            success: function(response) {
+                if (response.success) {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Selamat",
+                        text: response.success
+                    }).then(() => {
+                        $('#editModal').modal('hide');
+                        table.draw();
+                    });
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Mohon Maaf !",
+                        text: response.error
+                    });
+                }
+            },
+            error: function() {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!"
+                });
+            }
+        });
+    });
             $('body').on('click', '.deleteItem', function() {
 
                 var Item_id = $(this).data("id");

@@ -35,7 +35,7 @@
                             <div class="info-box-content">
                                 <span class="info-box-text">Total Dusun</span>
                                 <span class="info-box-number">
-                                    {{ $statistik->jumlahdusun }}
+                                    {{ $statistik->jumlahdusun ?? 0 }}
                                     <small>Dasun</small>
                                 </span>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="info-box-content">
                                 <span class="info-box-text">Total Penduduk</span>
                                 <span class="info-box-number">
-                                    {{ $statistik->jumlahpenduduk }}
+                                    {{ $statistik->jumlahpenduduk ?? 0 }}
                                     <small>Penduduk</small>
                                 </span>
                             </div>
@@ -71,7 +71,7 @@
                             <div class="info-box-content">
                                 <span class="info-box-text">Total Wisata</span>
                                 <span class="info-box-number">
-                                    {{ $wisata }}
+                                    {{ $wisata ?? 0 }}
                                     <small>Wisata</small>
                                 </span>
                             </div>
@@ -86,7 +86,7 @@
 
                             <div class="info-box-content">
                                 <span class="info-box-text">Total RT&RW</span>
-                                <span class="info-box-number">{{ $statistik->jumlahrt + $statistik->jumlahrw }}</span>
+                                <span class="info-box-number">  {{ ($statistik->jumlahrt ?? 0) + ($statistik->jumlahrw ?? 0) }}</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>

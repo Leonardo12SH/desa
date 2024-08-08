@@ -107,9 +107,9 @@
                                         <label for="exampleFormControlSelect1">Role Users</label>
                                         <select class="form-control" id="exampleFormControlSelect1" name="role">
                                             <option value="admin">Admin</option>
-                                            <option value="dawis">Dawis</option>
+                                            {{-- <option value="dawis">Dawis</option>
                                             <option value="rt">RT</option>
-                                            <option value="rw">RW</option>
+                                            <option value="rw">RW</option> --}}
                                             <option value="user">User</option>
                                         </select>
                                     </div>
