@@ -29,16 +29,18 @@
                                         <div class="container"> 
                                           <a class="logo navbar-brand" href="/">
                                             <div class="row">
-                                              <div class="col-lg-2 col-xl-2 col-sm-2 col-md-2 col-5 me-3">
+                                              <div class="col-lg-2 col-xl-2 col-sm-3 col-md-3 col-6 me-3 text-center">
                                                 <img class="logo logo-dark" src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png"
                                                 width="120" alt="Logo" />
                                             <img class="logo logo-light" src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png" width="120" alt="Logo" />
 
                                               </div>
-                                              <div class="col-lg-5 col-xl-5 col-sm-5 col-md-5 col-3 my-auto mt-4">
+                                              <div class="col-lg-5 col-xl-5 col-sm-5 col-md-5 col-9 my-auto mt-4 col-2 ms-2">
                                                 <h6>
-                                                  PEMERINTAH DESA BONTO SALAMA
-                                                  <p>Sinjai Barat</p>
+                                                  Sinjai Barat
+                                                  <p>
+                                                    PEMERINTAH DESA BONTO SALAMA
+                                                  </p>
                                                  </h6>
                                               </div>
                                             </div>
@@ -50,7 +52,8 @@
                                                   <div class="collapse navbar-collapse" id="navbarContent">
                                                             <ul class="navbar-nav ms-auto">
                                                                       <li class="nav-item active"><a class="nav-link" href="#hero">Home</a></li>
-                                                                      <li class="nav-item"><a class="nav-link" href="#features">Layanan</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="#features">Struktur</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
                                                                       <li class="nav-item"><a class="nav-link" href="#about">Wisata</a></li>
                                                                       <li class="nav-item"><a class="nav-link" href="#register">Hubungi</a></li>
                                                             </ul>

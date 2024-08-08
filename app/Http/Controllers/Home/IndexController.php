@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use App\Models\Data\Kontak;
 use App\Models\Desa\Informasi;
+use App\Models\Desa\Rt;
 use App\Models\Desa\Wisata;
 use Illuminate\Http\Request;
 
@@ -13,7 +14,8 @@ class IndexController extends Controller
     public function index()
     {
         $info = Informasi::all();
-        return view('home.index', compact('info'));
+        $statistik = Rt::first();
+        return view('home.index', compact('info', 'statistik'));
     }
     public function baca($slug_url)
     {
@@ -59,12 +61,12 @@ class IndexController extends Controller
             return redirect()->route('home.wisata');
         }
     }
-    
+
     public function contact(Request $request)
     {
         $request->validate([
             'name' => 'required',
-            'phone' => 'required|numeric|min:10',
+            // 'phone' => 'required|numeric|min:10',
             'email' => 'required',
             'body' => 'required'
         ]);

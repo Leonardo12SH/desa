@@ -24,28 +24,28 @@
                 <a href="{{ route('rt.index') }}" class="nav-link {{ (request()->segment(2) == 'rt') ? 'active' : '' }}">
                     <i class="nav-icon fas fa-user"></i>
                     <p>
-                        RT Management
+                        Statistik Desa
                     </p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="{{ route('rw.index') }}" class="nav-link {{ (request()->segment(2) == 'rw') ? 'active' : '' }}">
                     <i class="nav-icon fas fa-user"></i>
                     <p>
                         RW Management
                     </p>
                 </a>
-            </li>
+            </li> --}}
 
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="{{ route('keluarga') }}" class="nav-link {{ (request()->segment(2) == 'dawis') ? 'active' : '' }}">
                     <i class="nav-icon fas fa-table"></i>
                     <p>
                         Data Seluruh
                     </p>
                 </a>
-            </li>
+            </li> --}}
 
             <li class="nav-item">
                 <a href="{{ route('wisata.index') }}"

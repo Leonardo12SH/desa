@@ -40,16 +40,20 @@ class RtController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         $validator = Validator::make($request->all(), [
-            'nomor_rt' => 'required|unique:rts',
-            'nama_rt' => 'required',
+            'tahun' => 'required|unique:rts',
+            'jumlahdusun' => 'required|integer',
+            'jumlahpenduduk' => 'required|integer',
+            'jumlahrt' => 'required|integer',
+            'jumlahrw' => 'required|integer',
         ]);
 
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()->all()]);
         }
         Rt::create($request->all());
-        return response()->json(['success' => 'RT Berhasil ditambahkan']);
+        return response()->json(['success' => 'Statistik Berhasil ditambahkan']);
     }
 
     /**

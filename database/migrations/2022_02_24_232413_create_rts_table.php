@@ -15,8 +15,11 @@ class CreateRtsTable extends Migration
     {
         Schema::create('rts', function (Blueprint $table) {
             $table->id();
-            $table->integer('nomor_rt');
-            $table->string('nama_rt');
+            $table->string('tahun');
+            $table->integer('jumlahdusun');
+            $table->integer('jumlahpenduduk');
+            $table->integer('jumlahrt');
+            $table->integer('jumlahrw');
             $table->timestamps();
         });
     }

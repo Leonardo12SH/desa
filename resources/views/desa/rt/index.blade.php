@@ -1,6 +1,6 @@
 @extends('layouts.admin.master')
 @section('title')
-    RT Management
+    Data Statistik 
 @endsection
 
 
@@ -39,8 +39,11 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nomor RT</th>
-                                            <th>Nama RT</th>
+                                            <th>Tahun</th>
+                                            <th>Jumlah Dusun</th>
+                                            <th>Jumlah Penduduk</th>
+                                            <th>Jumlah RT</th>
+                                            <th>Jumlah RW</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -50,8 +53,11 @@
                                     <tfoot>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nomor RT</th>
-                                            <th>Nama RT</th>
+                                            <th>Tahun</th>
+                                            <th>Jumlah Dusun</th>
+                                            <th>Jumlah Penduduk</th>
+                                            <th>Jumlah RT</th>
+                                            <th>Jumlah RW</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
@@ -81,15 +87,31 @@
                     <form id="ItemForm" name="ItemForm" class="form-horizontal">
                         <input type="hidden" name="Item_id" id="Item_id">
                         <div class="mb-2">
-                            <label for="nomor_rt" class="form-label">Nomor RT</label>
-                            <input type="number" name="nomor_rt" class="form-control" id="nomor_rt" placeholder="1-999"
+                            <label for="tahun" class="form-label">Tahun</label>
+                            <input type="text" name="tahun" class="form-control" id="tahun" placeholder=""
                                 autocomplete="off" required>
                         </div>
                         <div class="mb-2">
-                            <label for="nomor_rt" class="form-label">Nama RT</label>
-                            <input type="text" name="nama_rt" class="form-control" id="nama_rt" placeholder=""
+                            <label for="jumlahdusun" class="form-label">Jumlah Dusun</label>
+                            <input type="number" name="jumlahdusun" class="form-control" id="jumlahdusun" placeholder=""
                                 autocomplete="off" required>
                         </div>
+                        <div class="mb-2">
+                            <label for="jumlahpenduduk" class="form-label">Jumlah Penduduk</label>
+                            <input type="number" name="jumlahpenduduk" class="form-control" id="jumlahpenduduk" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="jumlahrt" class="form-label">Jumlah RT</label>
+                            <input type="number" name="jumlahrt" class="form-control" id="jumlahrt" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="jumlahrw" class="form-label">Jumlah RW</label>
+                            <input type="number" name="jumlahrw" class="form-control" id="jumlahrw" placeholder=""
+                                autocomplete="off" required>
+                        </div>
+                       
                         <hr>
                         <button class="btn btn-secondary tombol float-right mt-3" id="saveBtn" value="create"></button>
                     </form>
@@ -130,24 +152,14 @@
                 responsive: true,
                 lengthChange: true,
                 autoWidth: true,
-                columns: [{
-                        data: 'DT_RowIndex',
-                        name: 'DT_RowIndex'
-                    },
-                    {
-                        data: 'nomor_rt',
-                        name: 'nomor_rt'
-                    },
-                    {
-                        data: 'nama_rt',
-                        name: 'nama_rt'
-                    },
-                    {
-                        data: 'action',
-                        name: 'action',
-                        orderable: true,
-                        searchable: true
-                    },
+                columns: [
+                    { data: 'DT_RowIndex', name: 'DT_RowIndex' },
+                    { data: 'tahun', name: 'tahun' },
+                    { data: 'jumlahpenduduk', name: 'jumlahpenduduk' },
+                    { data: 'jumlahdusun', name: 'jumlahdusun' },
+                    { data: 'jumlahrt', name: 'jumlahrt' },
+                    { data: 'jumlahrw', name: 'jumlahrw' },
+                    { data: 'action', name: 'action', orderable: true, searchable: true },
                 ]
             });
             $('#createNewItem').click(function() {

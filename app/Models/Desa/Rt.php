@@ -10,7 +10,10 @@ class Rt extends Model
     use HasFactory;
 
     protected $fillable = [
-        'nomor_rt',
-        'nama_rt',
+        'tahun',
+        'jumlahdusun',
+        'jumlahpenduduk',
+        'jumlahrt',
+        'jumlahrw',
     ];
 }

@@ -38,20 +38,106 @@
         </div>
     </section>
 
+    <section class="processes" id="berita">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="heading heading-3 text-center">
+                        <p class="heading-subtitle">Data Statistik</p>
+                        <h2 class="heading-title">Statistik Desa Bonto Salama</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                        <div class="card shadow ounded-3 border-success">
+                          <div class="card-body p-3">
+                            <div class="row">
+                              <div class="col-8">
+                                <div class="numbers">
+                                  <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah Penduduk</p>
+                                  <h5 class="font-weight-bolder">
+                                    {{ $statistik->jumlahpenduduk }}
+                                  </h5>
+                                </div>
+                            </div>
+                            <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                              
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                    <div class="card shadow rounded-3 border-primary">
+                      <div class="card-body p-3">
+                        <div class="row">
+                          <div class="col-8">
+                            <div class="numbers">
+                              <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah Dusun</p>
+                              <h5 class="font-weight-bolder">
+                                {{ $statistik->jumlahdusun }}
+                              </h5>
+                            </div>
+                        </div>
+                        <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                         
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="card shadow ounded-3 border-info">
+                  <div class="card-body p-3">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="numbers">
+                          <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah RT</p>
+                          <h5 class="font-weight-bolder">
+                            {{ $statistik->jumlahrt }}
+                          </h5>
+                        </div>
+                    </div>
+                    <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                    
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card shadow ounded-3 border-warning">
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="numbers">
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah RW</p>
+                      <h5 class="font-weight-bolder">
+                        {{ $statistik->jumlahrw }}
+                      </h5>
+                    </div>
+                </div>
+                <span class="">Jumlah penduduk di Desa Bonto Salama Tahun {{ $statistik->tahun }}</span>
+                 
+                </div>
+              </div>
+            </div>
+    </div>
+            </div>
+        </div>
+    </section>
     <section class="processes text-center" id="features">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                     <div class="heading heading-3 text-center">
-                        <p class="heading-subtitle">Layanan Desa Bonto Salama</p>
-                        <h2 class="heading-title">Informasi dan Layanan Publik</h2>
+                        <p class="heading-subtitle">Struktur Organisasi</p>
+                        <h2 class="heading-title">Struktur Desa Bonto Salama</h2>
                         <div class="divider">
                             <div class="line"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
 
                 <div class="col-12 col-lg-4">
                     <div class="process-card process-card-1">
@@ -91,11 +177,16 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+            <div class="row">
+                <div class="row justify-content-center">
+                    <img src="https://th.bing.com/th/id/R.32d2d26ae912f1a8ca4129111a752411?rik=ck9AYbtC2pzijw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-BgAfxrRA4Ng%2fUmD0Ppj9YYI%2fAAAAAAAABD8%2fjDnT62ak7hg%2fs1600%2fstruktur%2bdesa.jpg&ehk=vfvj%2bEBzslMUF%2fS%2fCxuXCdT9tYUEIaJ6l2Kk%2f1QnHSw%3d&risl=&pid=ImgRaw&r=0" alt="" height="700px">
+           </div>
             </div>
         </div>
     </section>
 
-    <section class="processes" id="features">
+    <section class="processes" id="">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
