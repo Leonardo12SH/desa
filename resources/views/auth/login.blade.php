@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Ojan Development">
+    <meta name="author" content="Izzatul Muslih">
     <!-- Title -->
-    <title>Login Account Member</title>
+    <title>Bonto Salama - Login</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,800&display=swap" rel="stylesheet">

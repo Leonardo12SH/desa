@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-Selamat datang di desa bonto salama
+Desa Bonto Salama
 @endsection
 
 @section('content')
@@ -18,7 +18,6 @@ Selamat datang di desa bonto salama
                                     Potensi</a></div>
                         </div>
                     </div>
-
                     <div class="col-12 col-md-6 col-lg-6">
                         <div class="hero-img">
                             <img src="image.png" alt="gambar rusak" height="100%">
@@ -26,7 +25,6 @@ Selamat datang di desa bonto salama
                     </div>
                 </div>
             </div>
-
             <div class="shape-divider-bottom">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">

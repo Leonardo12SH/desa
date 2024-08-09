@@ -2,25 +2,37 @@
 <html dir="ltr" lang="en-US">
 
 <head>
-          <meta charset="utf-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="author" content="PEMERINTAH DESA BONTO SALAMA" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-          <meta name="description" content="Digitalisasi Desa Bonto Salama With PEMERINTAH DESA BONTO SALAMA" />
-          <title>@yield('title')</title>
-          <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="author" content="PEMERINTAH DESA BONTO SALAMA" />
+  <meta name="description" content="Digitalisasi Desa Bonto Salama bersama Pemerintah Desa Bonto Salama." />
+  
+  <!-- Optional SEO meta tags -->
+  <meta name="keywords" content="desa, bonto salama, digitalisasi, pemerintah desa, layanan desa" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.yourwebsite.com/" />
+  
+  <title>@yield('title') - Desa Bonto Salama</title>
+  <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
 
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
-                    rel="stylesheet" />
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-                    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-          <link rel="stylesheet" href="{{ asset('cdn/css/style.css') }}">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-                    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous"
-                    referrerpolicy="no-referrer" />
-          @yield('css-tambahan')
+  <!-- Preconnect and preload for performance -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="{{ asset('cdn/css/style.css') }}" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" as="style" />
+
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ asset('cdn/css/style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+  
+  @yield('css-tambahan')
 </head>
+
 
 <body class="body-scroll">
           <div class="wrapper clearfix" id="wrapperParallax">
