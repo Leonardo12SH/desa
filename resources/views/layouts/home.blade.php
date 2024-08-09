@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="id">
 
 <head>
   <meta charset="utf-8" />
@@ -9,9 +9,9 @@
   <meta name="description" content="Digitalisasi Desa Bonto Salama bersama Pemerintah Desa Bonto Salama." />
   
   <!-- Optional SEO meta tags -->
-  <meta name="keywords" content="desa, bonto salama, digitalisasi, pemerintah desa, layanan desa" />
+  <meta name="keywords" content="desa, bonto salama, BontoSalama KKN , digitalisasi, pemerintah desa, layanan desa" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.yourwebsite.com/" />
+  <link rel="canonical" href="https://bontosalama.websiteku.help/" />
   
   <title>@yield('title') - Desa Bonto Salama</title>
   <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
