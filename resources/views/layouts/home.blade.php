@@ -13,7 +13,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bontosalama.websiteku.help/" />
   
-  <title>@yield('title') - Desa Bonto Salama</title>
+  <title>Digitalisasi Desa Bonto Salama | Meningkatkan Pelayanan Desa</title>
   <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
 
   <!-- Preconnect and preload for performance -->
