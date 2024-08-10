@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="author" content="PEMERINTAH DESA BONTO SALAMA" />
-  <meta name="description" content="Digitalisasi Desa Bonto Salama bersama Pemerintah Desa Bonto Salama." />
+  <meta name="description" content="Desa Bonto Salama berinovasi dengan digitalisasi untuk meningkatkan pelayanan masyarakat. Temukan informasi terbaru dan layanan desa kami di sini.">
   
   <!-- Optional SEO meta tags -->
-  <meta name="keywords" content="desa, bonto salama, BontoSalama KKN, bonto salama info, digitalisasi, pemerintah desa, layanan desa, bontosalama_info" />
+  <meta name="keywords" content="desa, bonto salama, BontoSalama KKN, bonto salama info, digitalisasi, pemerintah desa, layanan desa, bontosalama_info, Bonto salama info" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bontosalama.info/" />
   
-  <title>Digitalisasi Desa Bonto Salama | Meningkatkan Pelayanan Desa</title>
+  <title>Desa Bonto Salama - Digitalisasi untuk Pelayanan Masyarakat</title>
   <link href="{{ asset('cdn/img/image_3.png') }}" rel="icon" />
 
   <!-- Preconnect and preload for performance -->
@@ -162,6 +162,22 @@
                     </footer>
           </div>
 
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalInformation",
+              "name": "Desa Bonto Salama",
+              "description": "Desa Bonto Salama berinovasi dengan digitalisasi untuk meningkatkan pelayanan masyarakat.",
+              "url": "https://bontosalama.info/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sinjai Barat",
+                "addressRegion": "Sulawesi Selatan",
+                "postalCode": "92612"
+              },
+            }
+            </script>
+            
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
                     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
