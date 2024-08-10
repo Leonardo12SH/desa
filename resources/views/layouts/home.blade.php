@@ -9,7 +9,7 @@
   <meta name="description" content="Desa Bonto Salama berinovasi dengan digitalisasi untuk meningkatkan pelayanan masyarakat. Temukan informasi terbaru dan layanan desa kami di sini.">
   
   <!-- Optional SEO meta tags -->
-  <meta name="keywords" content="desa, bonto salama, BontoSalama KKN, bonto salama info, digitalisasi, pemerintah desa, layanan desa, bontosalama_info, Bonto salama info" />
+  <meta name="keywords" content="desa, bonto salama, BontoSalama KKN,Bonto Salama KKN UNHAS, bonto salama info, digitalisasi, pemerintah desa, layanan desa, bontosalama_info, Bonto salama info" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bontosalama.info/" />
   
