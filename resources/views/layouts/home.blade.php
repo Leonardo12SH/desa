@@ -132,9 +132,9 @@
                                                                                 </div>
                                                                                 <div class="col-12 mb-4">
                                                                                           <textarea class="form-control border-primary" id="exampleFormControlTextarea1" placeholder="Isi pesan disini" name="body" rows="3"></textarea>
-                                                                                          <small class="text-danger">Note : Segala pertanyaan anda akan kami balas memalui EMail
+                                                                                          {{-- <small class="text-danger">Note : Segala pertanyaan anda akan kami balas memalui EMail
                                                                                                     yang anda
-                                                                                                    kirimkan.</small>
+                                                                                                    kirimkan.</small> --}}
                                                                                 </div>
                                                                                 <div class="col-12 text-center">
                                                                                           <button class="btn btn--secondary send_form" type="submit">Kirim Permintaan</button>
@@ -148,13 +148,13 @@
                               </div>
                     </section>
 
-                    <footer class="footer bg-secondary" id="footer">
+                    <footer class="bg-secondary text-white text-center py-4" id="footer">
                               <div class="footer-bottom">
                                         <div class="container">
                                                   <div class="row">
                                                             <div class="col-12">
-                                                                      <div class="footer-copyright"><span>&copy; <script>document.write(new Date().getFullYear());</script> <a href="/">Desa Bonto Salama</a> Pengabdian
-                                                                                          Masyarakat x PEMERINTAH BONTO SALAMA</span></div>
+                                                                      <div class="footer-copyright"><span>&copy; <script>document.write(new Date().getFullYear());</script> <a class="text-white" href="bontosalama.info">Desa Bonto Salama </a>Pengabdian
+                                                                                      Masyarakat x PEMERINTAH BONTO SALAMA</span></div>
                                                             </div>
                                                   </div>
                                         </div>

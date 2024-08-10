@@ -86,10 +86,8 @@
         <!-- Main Footer -->
         <footer class="main-footer text-center">
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2024
-                <a href="#"> PEMERINTAH DESA BONTO SALAMA </a>.
-            </strong>
-            All rights reserved.
+            <span>&copy; <script>document.write(new Date().getFullYear());</script> <a href="/">Desa Bonto Salama</a> Pengabdian
+                Masyarakat x PEMERINTAH BONTO SALAMA</span>
         </footer>
     </div>
     <!-- ./wrapper -->

@@ -27,7 +27,7 @@
                     <section class="content">
                               <div class="container-fluid">
                                         <div class="row justify-content-center">
-                                                 <img src="https://th.bing.com/th/id/R.32d2d26ae912f1a8ca4129111a752411?rik=ck9AYbtC2pzijw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-BgAfxrRA4Ng%2fUmD0Ppj9YYI%2fAAAAAAAABD8%2fjDnT62ak7hg%2fs1600%2fstruktur%2bdesa.jpg&ehk=vfvj%2bEBzslMUF%2fS%2fCxuXCdT9tYUEIaJ6l2Kk%2f1QnHSw%3d&risl=&pid=ImgRaw&r=0" alt="" height="700px">
+                                            <img src="{{ asset('struktur_fix.jpeg') }}" alt="gambar tidak ada" height="700px">
                                         </div>
                               </div>
                     </section>

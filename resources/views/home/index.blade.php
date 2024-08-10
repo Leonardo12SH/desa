@@ -20,7 +20,7 @@ Desa Bonto Salama
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
                         <div class="hero-img">
-                            <img src="image.png" alt="gambar rusak" height="100%">
+                            <img src="image.png" alt="Peta Desa Bonto Salama" height="100%">
                         </div>
                     </div>
                 </div>
@@ -125,15 +125,18 @@ Desa Bonto Salama
     <section class="processes text-center" id="features">
         <div class="container">
             <div class="row clearfix">
-                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3  mb-xl-0">
                     <div class="heading heading-3 text-center">
                         <p class="heading-subtitle">Struktur Organisasi</p>
                         <h2 class="heading-title">Struktur Desa Bonto Salama</h2>
-                        <div class="divider">
-                            <div class="line"></div>
-                        </div>
+                      
                     </div>
                 </div>
+                
+            </div>
+            <div class="row">
+
+                <img src="{{ asset('struktur_fix.jpeg') }}" alt="" height="75%" weight="auto">
             </div>
             {{-- <div class="row">
 
@@ -177,10 +180,7 @@ Desa Bonto Salama
                 </div>
             </div> --}}
            
-                <div class="row justify-content-center">
-                    <img src="https://th.bing.com/th/id/R.32d2d26ae912f1a8ca4129111a752411?rik=ck9AYbtC2pzijw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-BgAfxrRA4Ng%2fUmD0Ppj9YYI%2fAAAAAAAABD8%2fjDnT62ak7hg%2fs1600%2fstruktur%2bdesa.jpg&ehk=vfvj%2bEBzslMUF%2fS%2fCxuXCdT9tYUEIaJ6l2Kk%2f1QnHSw%3d&risl=&pid=ImgRaw&r=0" alt="" height="75%" weight="auto">
-       
-            </div>
+                
         </div>
     </section>
 
@@ -214,6 +214,7 @@ Desa Bonto Salama
                     <div class="col-md-3 col-12">
                         <img src="{{ asset('cdn/img/belajar.svg') }}" alt="Artikel Kosong">
                     </div>
+                    <p class="text-center">Belum ada informasi</p>
                 @endforelse
             </div>
         </div>
