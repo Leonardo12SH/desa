@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://bontosalama.info/" />
   
   <title>Digitalisasi Desa Bonto Salama | Meningkatkan Pelayanan Desa</title>
-  <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
+  <link href="{{ asset('cdn/img/image_3.png') }}" rel="icon" />
 
   <!-- Preconnect and preload for performance -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
