@@ -55,6 +55,7 @@
                                 @empty
                                           <div class="col-md-3 col-12">
                                                     <img src="{{ asset('cdn/img/belajar.svg') }}" alt="Artikel Kosong">
+                                                    <p class="text-center">Belum ada Data</p>
                                           </div>
                                 @endforelse
                       </div>
