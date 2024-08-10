@@ -9,9 +9,9 @@
   <meta name="description" content="Digitalisasi Desa Bonto Salama bersama Pemerintah Desa Bonto Salama." />
   
   <!-- Optional SEO meta tags -->
-  <meta name="keywords" content="desa, bonto salama, BontoSalama KKN , digitalisasi, pemerintah desa, layanan desa" />
+  <meta name="keywords" content="desa, bonto salama, BontoSalama KKN, bonto salama info, digitalisasi, pemerintah desa, layanan desa, bontosalama_info" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://bontosalama.websiteku.help/" />
+  <link rel="canonical" href="https://bontosalama.info/" />
   
   <title>Digitalisasi Desa Bonto Salama | Meningkatkan Pelayanan Desa</title>
   <link href="{{ asset('cdn/images/favicon/favicon.png') }}" rel="icon" />
