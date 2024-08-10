@@ -2571,7 +2571,7 @@ textarea.form-control {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 800px;
+    min-height: 600px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

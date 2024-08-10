@@ -33,33 +33,31 @@
   @yield('css-tambahan')
 </head>
 
-
 <body class="body-scroll">
           <div class="wrapper clearfix" id="wrapperParallax">
                     <header class="header header-transparent header-sticky">
                               <nav class="navbar navbar-sticky navbar-expand-lg" id="primary-menu">
                                         <div class="container"> 
                                           <a class="logo navbar-brand" href="/">
-                                            <div class="row">
-                                              <div class="col-lg-2 col-xl-2 col-sm-3 col-md-3 col-6 me-3 text-center">
+                                            <div class="row align-items-center">
+                                              <div class="col-lg-2 col-xl-2 col-sm-3 col-md-3 col-4 text-center">
                                                 <img class="logo logo-dark" src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png"
-                                                width="120" alt="Logo" />
-                                            <img class="logo logo-light" src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png" width="120" alt="Logo" />
-
+                                                  width="100" alt="Logo" />
+                                                <img class="logo logo-light" src="https://2.bp.blogspot.com/-59DNjzogh0o/XBL5TFdklpI/AAAAAAAAQ5w/KtF4wSFV-p8AxsULi2LTCQVFXStjC-J7wCLcBGAs/s1600/Sinjai.png"
+                                                  width="100" alt="Logo" />
                                               </div>
-                                              <div class="col-lg-5 col-xl-5 col-sm-5 col-md-5 col-9 my-auto mt-4 col-2 ms-2">
-                                                <h6>
+                                              <div class="col-lg-10 col-xl-10 col-sm-9 col-md-9 col-8 my-auto">
+                                                <h6 class="mb-0 mt-4 ms-xl-5 ms-lg-5">
                                                   Sinjai Barat
                                                   <p>
-                                                    PEMERINTAH DESA BONTO SALAMA
+                                                    DESA BONTO SALAMA
                                                   </p>
                                                  </h6>
                                               </div>
                                             </div>
-                                         
-                                          
                                           </a>
-                                                  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent"
+                                          
+                                                  <button class="navbar-toggler collapsed floating-button" type="button" data-toggle="collapse" data-target="#navbarContent"
                                                             aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
                                                   <div class="collapse navbar-collapse" id="navbarContent">
                                                             <ul class="navbar-nav ms-auto">
@@ -162,10 +160,11 @@
                     </footer>
           </div>
 
+         
           <script type="application/ld+json">
             {
               "@context": "https://schema.org",
-              "@type": "LocalInformation",
+              "@type": "GovernmentOrganization",
               "name": "Desa Bonto Salama",
               "description": "Desa Bonto Salama berinovasi dengan digitalisasi untuk meningkatkan pelayanan masyarakat.",
               "url": "https://bontosalama.info/",
